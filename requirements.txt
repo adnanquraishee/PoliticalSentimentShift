@@ -1,0 +1,34 @@
+# Political Sentiment Shift Prediction - Requirements
+# Install with: pip install -r requirements.txt
+
+# Core Data Science Libraries
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Natural Language Processing
+nltk>=3.8.0
+transformers>=4.30.0
+tokenizers>=0.13.0
+
+# Deep Learning - PyTorch
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+
+# Web Interface
+gradio>=3.35.0
+
+# Utilities
+tqdm>=4.65.0
+pillow>=9.4.0
+
+# Optional but Recommended
+accelerate>=0.20.0  # For faster model loading
+sentencepiece>=0.1.99  # For some tokenizers
