@@ -2,7 +2,7 @@
 
 # Configuration
 VENV_DIR="venv"
-PYTHON_SCRIPT="political_sentiment_prediction_colab.py"
+PYTHON_SCRIPT="main.py"
 REQUIREMENTS_FILE="requirements.txt"
 
 # Colors for output
@@ -54,8 +54,10 @@ fi
 # Run the Python script
 if [ -f "$PYTHON_SCRIPT" ]; then
     echo -e "${BLUE}================================================================${NC}"
-    echo -e "${BLUE}   Running $PYTHON_SCRIPT...   ${NC}"
+    echo -e "${BLUE}   Running Project Pipeline...   ${NC}"
     echo -e "${BLUE}================================================================${NC}"
+    # Set PYTHONPATH to include current directory
+    export PYTHONPATH=$PYTHONPATH:.
     "$PYTHON" "$PYTHON_SCRIPT"
 else
     echo "Python script $PYTHON_SCRIPT not found!"
